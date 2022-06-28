@@ -2,39 +2,27 @@
 public class Esagono implements Poligono {
 
 	private int lato;
-	final double costante;
+	final double costante = 2.598;
 
-	public Esagono(int lato, double costante) {
-		this.costante = 2.598;
+	public Esagono(int lato) {
 		this.lato = lato;
 	}
 
 // calcoli 
-	public double area() {
-		double area = (lato * lato) * costante;
-		return area;
-	}
-	// @Override
-	// public void calcolaPerimetro() {
-	// int perimetro = (lato * 6);
-
-	// }
-
-	// @Override
-	// public void calcolaArea() {
-	// System.out.println("L'area dell'esagono è: ");
-
-	// }
 
 	@Override
 	public void calcolaPerimetro() {
-		// TODO Auto-generated method stub
+		int perimetro = (lato * 6);
+		System.out.println("Il perimetro dell'esagono è: " + perimetro);
 
+		return;
 	}
 
 	@Override
 	public void calcolaArea() {
-		// TODO Auto-generated method stub
+		double area = (lato * lato) * costante;
+		System.out.println("L'area dell'esagono è: " + area);
+		return;
 
 	}
 

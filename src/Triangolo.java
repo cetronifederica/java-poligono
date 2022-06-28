@@ -11,29 +11,19 @@ public class Triangolo implements Poligono {
 		this.altezza = altezza;
 	}
 
-	// @Override
-	// public calcolaPerimetro() {
-	// int perimetro = (lato1 + lato2 + lato3);
-	// return perimetro;
-
-	// }
-
-	// @Override
-	// public int calcolaArea() {
-	// int area = (base * altezza) / 2;
-	// return area;
-
-	// }
+	// calcoli
 
 	@Override
 	public void calcolaPerimetro() {
-		// TODO Auto-generated method stub
+		int perimetro = (lato1 + lato2 + lato3);
+		System.out.println("Il perimetro del triangolo è: " + perimetro);
 
 	}
 
 	@Override
 	public void calcolaArea() {
-		// TODO Auto-generated method stub
+		int area = (base * altezza) / 2;
+		System.out.println("l'area del triangolo è: " + area);
 
 	}
 
