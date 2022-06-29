@@ -1,7 +1,7 @@
 
 public interface Poligono {
 
-	public void calcolaPerimetro();
+	public double calcolaPerimetro();
 
-	public void calcolaArea();
+	public double calcolaArea();
 }

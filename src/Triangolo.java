@@ -1,9 +1,11 @@
 
 public class Triangolo implements Poligono {
 
-	private int lato1, lato2, lato3, base, altezza;
+	// attributi
+	private double lato1, lato2, lato3, base, altezza;
 
-	public Triangolo(int lato1, int lato2, int lato3, int base, int altezza) {
+	// costruttore
+	public Triangolo(double lato1, double lato2, double lato3, double base, double altezza) {
 		this.lato1 = lato1;
 		this.lato2 = lato2;
 		this.lato3 = lato3;
@@ -14,16 +16,18 @@ public class Triangolo implements Poligono {
 	// calcoli
 
 	@Override
-	public void calcolaPerimetro() {
-		int perimetro = (lato1 + lato2 + lato3);
+	public double calcolaPerimetro() {
+		double perimetro = (lato1 + lato2 + lato3);
 		System.out.println("Il perimetro del triangolo è: " + perimetro);
+		return perimetro;
 
 	}
 
 	@Override
-	public void calcolaArea() {
-		int area = (base * altezza) / 2;
+	public double calcolaArea() {
+		double area = (base * altezza) / 2;
 		System.out.println("l'area del triangolo è: " + area);
+		return area;
 
 	}
 
